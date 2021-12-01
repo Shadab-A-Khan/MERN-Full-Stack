@@ -1,0 +1,70 @@
+Margin is used for outer spacing and Padding is used for inner Spacing
+
+//html
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Margin and Padding</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+    <div id="outer-div1">
+    	
+         <div id="inner-div">
+         	
+         </div>
+
+    </div>
+
+    <div id="outer-div2">
+    	
+
+    </div>
+
+</body>
+</html>
+
+
+
+
+
+
+//CSS
+
+
+#outer-div1{
+   height: 200px;
+   width: 200px;
+   background-color: blue;
+    margin: 4px;
+    margin: 4px 6px;   /*Top Bottom  and Left and Right Margin*/
+    margin: 4px 6px 4px 4px ;
+    margin-top: 4px;
+    margin-bottom: 4px;
+    margin-left: 4px;
+    margin-right: 4px;
+    margin: auto;      /* center the element position*/
+    
+
+    /*Padding*/
+
+    padding: 20px;
+}
+
+#inner-div{
+   height: 50%;
+   width: 50%;
+   background-color: yellow;
+
+}
+
+#outer-div2{
+    height: 200px;
+   width: 200px;
+   background-color: orange;
+   margin-top: 10px;
+}
