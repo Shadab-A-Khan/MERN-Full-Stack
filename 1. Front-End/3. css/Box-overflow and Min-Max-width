@@ -1,0 +1,39 @@
+//HTML
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Min-max-widht</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+       <div id="dev1">
+       	
+       	  <p>This is a Paragraph</p>
+       	  <p>This is a Paragraph</p>
+       	  <p>This is a Paragraph</p>
+       	  <p>This is a Paragraph</p>
+       	  <p>This is a Paragraph</p>
+       	  <p>This is a Paragraph</p>
+       	  <p>This is a Paragraph</p>
+       	  <p>This is a Paragraph</p>
+
+
+       </div>
+</body>
+</html>
+
+
+//CSS
+
+
+#dev1{
+	height: 100px;
+	width: 50%;
+	min-height: 150px;
+	max-height: 250px;
+	border: 2px solid blue;
+	overflow: scroll;
+	background-color: cyan;
+}
