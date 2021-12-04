@@ -1,0 +1,8 @@
+ <section id="search-section">
+            	
+            	<form action="">
+            		<input type="text" placeholder="seach....">
+            		<button type="submit"><img src="https://ninjasfiles.s3.amazonaws.com/asset_0000000000000013_1549319004_search-icon.png"></button>
+            	</form>
+              
+  </section>
