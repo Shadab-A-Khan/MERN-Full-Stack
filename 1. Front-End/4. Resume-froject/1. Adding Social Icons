@@ -1,0 +1,186 @@
+/* HTML */
+<!DOCTYPE html>
+<html>
+<head>
+    <title> My Resume </title>
+</head>
+<body>
+
+    <header id="body-header">
+        <nav>
+
+            <ul class="horizontal-list text-center">
+                <li>
+                    <a href="#" > Home </a>
+                </li>
+                <li>
+                    <a href="#about" > About </a>
+                </li>
+                <li>
+                    <a href="#skills" > Skills </a>
+                </li>
+                
+               
+                    <h1 id="header-my-resume">
+                        Shadab Ahmad Khan
+                    </h1>
+                
+                <div>
+                    <ul class="Horizontal-list text-center social-icon">
+                        <li>
+                            <a href="#"> <img src="https://ninjasfiles.s3.amazonaws.com/asset_0000000000000015_1549330433_linkedin-logo.png" alt="">
+                            </a>
+                        </li>
+                        
+                                      
+                        <li>
+                            <a href="#">
+                               <img src="https://ninjasfiles.s3.amazonaws.com/asset_0000000000000022_1549822879_stackoverflow-logo.png" alt="">
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a href="#"> <img src="https://ninjasfiles.s3.amazonaws.com/asset_0000000000000023_1549823282_google-plus-logo.png" alt="">
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a href="#" src="Facebook - https://ninjasfiles.s3.amazonaws.com/asset_0000000000000014_1549330414_facebook-logo.png" alt="">
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a href="#"> <img src="https://ninjasfiles.s3.amazonaws.com/asset_0000000000000021_1549822861_quora-logo.png" alt="">
+                            </a>
+                        </li>
+                        
+                    </ul>
+                </div>
+                   
+                
+            </ul>
+
+        </nav>
+        
+        <container class="social-icon">
+            <span> 
+                <li> </li> 
+            </span>
+                
+                
+        </container>
+
+    </header>
+    <main>
+
+        <section id="about">
+        </section>
+
+        <section id="skills">
+
+        </section>
+
+        <section id="experience">
+
+        </section>
+
+        <section id="education">
+
+        </section>
+
+        <section id="portfolio">
+
+        </section>
+
+        <section id="contact">
+
+        </section>
+
+    </main>
+
+</body>
+</html>
+
+
+
+
+
+/* CSS */
+
+
+body {
+    margin: 0px;
+}
+
+/* Body Header */
+
+#body-header {
+    height: 65vh;
+    opacity: 0.8;
+    background-image: url(https://ninjasfiles.s3.amazonaws.com/asset_0000000000000020_1549743985_macbook_mouse.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+/* Horizontal Lists */
+
+.horizontal-list {
+    list-style: none;
+    padding-left: 0px;
+}
+
+.horizontal-list li {
+    display: inline-block;
+    margin: 0px 8px 8px 0px;
+}
+
+
+.horizontal-list li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.5s, border-bottom 4s;
+}
+
+.horizontal-list li a:hover {
+    color: lightgrey;
+    border-bottom: 1px solid white;
+}
+
+.text-center {
+    text-align: center;
+}
+
+
+#header-my-resume{
+    
+    font-size: 3rem;
+    letter-spacing: 0.1rem;
+    color: white;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+.text-center{
+    text-align:center;
+}
+.social-icon li a img{
+    height:20px;
+    width:20px;  
+    font-size:25px;
+    color: red;
+}
+
+.social-icon li{
+    margin-bottom:-20px;
+}
+.Horizontal-list li{
+    display:inline;
+    margin: 0px , 25px , 0px , 25px;
+    
+}
+
+.Horizontal-list{
+    list-style:none;
+    padding: 0px;
+    
+}
