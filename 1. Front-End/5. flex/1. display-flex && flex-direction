@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Flex</title>
+	<link rel="stylesheet" type="text/css" href="style2.css">
+</head>
+<body>
+     
+     <div id="container">
+
+     	<div id="div1">
+     		
+     	</div>
+
+
+     	<div id="div2">
+     		
+     	</div>
+
+
+     	<div id="div3">
+     		
+     	</div>
+
+
+     	<div id="div4">
+     		
+     	</div>
+
+     	
+     </div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+/* CSS */
+
+#container{
+	height: 75vh;
+	width: 75vw;
+	background-color: grey;
+	display: flex;
+	flex-direction: row;
+
+	/*flex-direction: column;
+	flex-direction: row-reverse;
+	flex-direction: column-reverse;*/
+}
+
+#container div{
+	height: 200px;
+	width: 200px;
+}
+
+#div1{
+   background-color: cyan;
+   order: 1; /*high order value appears at the end*/
+}
+
+#div2{
+   background-color: red;
+}
+
+#div3{
+   background-color: black;
+}
+
+#div4{
+   background-color: orange;
+}
