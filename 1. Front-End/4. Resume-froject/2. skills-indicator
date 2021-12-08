@@ -1,0 +1,38 @@
+<section id="skills">
+            <h1 class="section-heading mb75pxi">
+                <span>
+                    <i class="fas fa-chalkboard-techer"></i>
+                </span>
+                <span> SKILLS </span>
+            </h1>
+
+            <div class="skills-display">
+                <div class="skills-progress">
+                    <div class="eighty-five-percent mb-blue">
+                        <div class="skill-name">
+                            <span>C++</span>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="skills-progress">
+                    <div class="seventy-percent mb-red">
+                        <div class="skill-name">
+                            <span>java</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skills-progress">
+                    <div class="ninety-percent mb-cyan">
+                        <div class="skill-name">
+                            <span>HTML</span>
+                        </div>
+                    </div>
+                </div>
+
+               
+            </div>
+
+        </section>
