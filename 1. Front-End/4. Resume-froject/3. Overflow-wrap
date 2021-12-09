@@ -1,0 +1,28 @@
+/* wrap the overflowing word in the container */
+
+/*HTML*/
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <div id="container">
+  	<p>This is a paragraph</p>
+  </div>
+</body>
+</html>
+
+
+/*CSS*/
+
+#container{
+	width: 50px;
+	height: auto;
+	border: 2px black solid;
+	overflow-wrap: break-word;
+}
