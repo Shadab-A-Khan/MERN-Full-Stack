@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <div id="container">
+  	
+  </div>
+</body>
+</html>
+
+
+
+//CSS
+
+
+#container{
+	width: 500px;
+	height: 500px;
+	border: 2px black solid;
+	/*background-image: linear-gradient(to top right , blue , cyan , red);*/
+	overflow-wrap: break-word;
+	/*background: repeating-linear-gradient(red, blue 10px);*/
+	background: radial-gradient(red , blue , cyan);
+}
