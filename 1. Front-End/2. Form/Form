@@ -1,0 +1,23 @@
+ <section id="contact">
+            
+            <div id="contact-name">
+                Contact
+            </div>
+            <div id="details">
+                <div id="contact-container">
+                    
+                <div id="contact-form-container">
+                       <input id="input-name" name="name" type="text" placeholder="Your Name">
+                        <input id="input-email" name="input-email" type="text" required placeholder="Your Email">
+                        <textarea id="input-message" name="input-message" rows="2" cols=40 placeholder="Message"></textarea>
+                        <button class="sub-btn" type="submit">SEND MESSAGE</button> 
+                    </div>
+              
+                
+                <button id="button">
+                    SEND MESSAGE
+                </button>
+                 
+            </div>
+
+        </section>
