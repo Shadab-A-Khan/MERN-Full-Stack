@@ -1,0 +1,32 @@
+/*HTML*/
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Link Related Pseudo Section</title>
+</head>
+<body>
+     <div id="container">
+     	 <p> click
+     	 	<a href="https://www.google.com/" target="blank">GOOGLE</a> 
+     	 	to search
+     	 </p>
+     </div>
+</body>
+</html>
+
+
+
+/*CSS*/
+
+p:active{
+	background-color: cyan;
+}
+a:active{
+	color: red;
+}
+a:visited{
+	color: green;
+}
