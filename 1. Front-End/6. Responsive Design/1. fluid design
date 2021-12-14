@@ -1,0 +1,35 @@
+/*HTML *.
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Responsive</title>
+	<link rel="stylesheet" type="text/css" href="style6.css">
+</head>
+<body>
+     <p id="div1">What is Responsive Web Design?
+
+Responsive Web Design is about using HTML and CSS to automatically resize, hide, shrink, or enlarge, a website, to make it look good on all devices (desktops, tablets, and phones):
+      </p>
+
+</body>
+</html>
+
+
+
+
+
+
+/* CSS */
+
+html{
+	font-size: 30px;
+}
+#div1{
+   width: 60%;
+   padding: 5px;
+   border: 1px solid black;
+
+}
