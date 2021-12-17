@@ -1,0 +1,69 @@
+/* HTML */
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Animation and 3D</title>
+	<link rel="stylesheet" type="text/css" href="style3D.css">
+</head>
+<body>
+
+<div>
+	
+</div
+>
+</body>
+</html>
+
+
+
+
+/* CSS */
+
+@keyframes changeShape{
+    
+    from{
+    	border-radius: 0%;
+    }
+
+    25%{
+    	border-radius: 12.5%;
+    }
+
+    50%{
+    	border-radius: 25%;
+    }
+
+    to{
+    	border-radius: 50%;
+    }
+
+
+    /* insted of   from   we could have writen    0%   as well
+       insted of    to    we could have writen   100%   as well
+       they both will work exectly the same*/  
+}
+
+
+div{
+	height: 100px;
+	width: 100px;
+	position: absolute;
+	top: 20%;
+	left: 20%;
+	background-color: green;
+
+
+    /*animation: changeShape 1s ease-in-out 2;  2 or infinite is
+     the number of steps in ansimation*/
+
+    animation: changeShape 1s ease-in-out infinite alternate;
+
+    /* alternet is used to make the transition from circle to radius and 
+    radius to circle smoothly*/
+
+    /*ease-in-out means :- transition  starts smoothly and ends smoothly*/
+}
+
