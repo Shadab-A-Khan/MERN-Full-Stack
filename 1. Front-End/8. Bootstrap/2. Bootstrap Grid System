@@ -1,0 +1,19 @@
+CONTAINERS
+     ROWS 
+       COLUMNS
+       
+       
+       
+       
+       
+     <div class="container-fluid">
+
+     	    <div class="row">
+
+     		        <div class="col" style="background-color: red; height: 60px;">
+     			
+     		        </div>
+     		
+     	    </div>
+     	
+     </div>
