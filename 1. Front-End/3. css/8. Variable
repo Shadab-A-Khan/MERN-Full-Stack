@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Variable</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="container_div">  <!-- the children will inherit the color of there parent -->
+    	<p>Container Div</p>
+    	<div class="inner_div">
+
+    		<p>Inner Div</p>
+    		
+    		<div class="inner_div_1">
+    			<p>Inner div 1</p>
+    			
+    		</div>
+
+    		<div class="inner_div_2">
+    			<p>Inner div 2</p>
+    			
+    		</div>
+
+    	</div>
+
+
+    </div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+----CSS-----
+
+
+
+:root{
+	--text-color:red;
+}
+
+
+.container_div{
+    color: var(--text-color);
+	padding:1rem;
+	border: 2px solid black;
+	
+}
+
+.inner_div{
+	--text-color: blue;
+    color: var(--text-color);
+	padding:1rem;
+	border: 2px solid black;
+}
+
+.inner_div_1{
+    color: var(--text-color);
+	padding:1rem;
+	border: 2px solid black;
+	margin: 0.2rem;
+}
+
+.inner_div_2{
+    color: var(--text-color);
+	padding:1rem;
+	border: 2px solid black;
+	margin: 0.2rem;
+}
+
+
+
+
+
