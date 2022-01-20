@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Major Project</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://kit.fontawesome.com/7adc0ddcd8.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+	<header>
+
+	   <div id="header_icon">
+		   <img src="images\download.png" class="icon_image">
+		   <h1>
+		   	  <span>Coding </span>
+		      <span>Studio </span>
+		   </h1>
+	   </div>
+
+
+       <span><h2>Favourite</h2></span>
+
+	   <section id="search_bar1">
+	   	<input class="input1" type="text">
+
+	   	<div id="search_bar">
+	   		 <span>
+	   	 	     <i class="fas fa-search"> </i> 
+	   	     </span>
+
+	   	     <span>seach.... </span>
+
+	   	     <span>
+	   		     <i class="fas fa-microphone-alt"></i>
+	   	     </span>
+	   	</div>
+
+	   </section>
+
+            
+    
+    </header>
+
+  
+
+  <div id="container">
+
+     <span>
+    	<img src="C:\Users\Shadab Ahmad Khan\OneDrive\Documents\Major Project 1\images\images (1).jpg" id="music_img1">
+     </span>
+
+     <span>
+   	 	<img src="C:\Users\Shadab Ahmad Khan\OneDrive\Documents\Major Project 1\images\shutterstock_1619586861.jpg" id="music_img">
+   	 </span>
+        
+     <span>
+    	<img src="C:\Users\Shadab Ahmad Khan\OneDrive\Documents\Major Project 1\images\images.jpg" id="music_img2">
+     </span>
+
+  </div>
+   	 
+
+    
+    
+
+
+</body>
+</html>
+
+
+
+
+
+---CSS--------------------
+
+
+
+
+
+.icon_image{
+	padding: 1rem;
+	height: 100px;
+	width: 100px;
+	/*display:inline;*/
+
+}
+
+
+h1 > span:nth-child(1){
+	display: inline;
+	position: relative;
+	/*top: -50px;*/
+	bottom: 130px;
+    left: 120px;
+}
+
+
+
+h1 > span:nth-child(2){
+	display: inline;
+	position: relative;
+	/*top: -50px;*/
+	bottom: 90px;
+    left: 20px;
+}
+
+
+
+#search_bar{
+	display: inline;
+	margin-left: -170px;
+	padding: 1px;
+	position: relative;
+}
+
+div > span:nth-child(1){
+	margin-left: -240px;
+	padding: 100px;
+	/*position: relative;*/
+}
+div > span:nth-child(2){
+	margin-left: -190px;
+	padding: 100px;
+
+
+}
+div > span:nth-child(3){
+	
+	padding: 100px;
+
+}
+
+
+.input1{
+	height: 30px;
+	width: 300px;
+}
+
+#header_icon{
+ display: inline;
+}
+
+#search_bar1{
+	/*display: inline;*/
+	margin-left: 400px;
+	margin-top: -45px;
+	padding-left: 400px;
+
+}
+h2{
+	margin-left: 300px;
+	margin-top: -160px;
+}
+
+#music_img{
+	
+	width: 30%;
+	padding-top: 170px;
+	margin-bottom: -70px;
+	display: inline;
+}
+#music_img1{
+
+     margin-left: 300px;
+      margin-left: 300px;
+      display: inline;
+}
+#music_img2{
+    margin-left: 800px;
+    margin-top: -450px;
+    display: inline;
+
+}
