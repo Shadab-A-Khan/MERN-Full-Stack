@@ -1,0 +1,166 @@
+!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Major Project</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://kit.fontawesome.com/7adc0ddcd8.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+	
+	<body>
+
+
+	<!-- header block -->
+		<header>
+			<div class="nav-bar">
+				<div class="nav-icon">
+					<img src="images\download.png">
+				</div>
+
+				<div class="favourites">
+					<p>Favourites </p>
+				</div>
+
+				<div class="search-container">
+					<i class="fas fa-search"></i>
+					<input type="text" name="search-box" id="search-box"placeholder="Search...">
+
+					<i class="fas fa-microphone"></i>
+				</div>
+
+				<div class="nav-bell-icon">
+					<i class="fas fa-bell"></i>
+					<i class="fas fa-circle" id="dot"></i>
+				</div>
+
+				<div class="nav-profile-icon">
+					<img src="image/DSC_0028.jpg">
+				</div>
+				
+
+			</div>
+
+		</header>
+<!-- end of header block -->
+
+<!-- main block -->
+		<main class="main">
+			<div class="music-body-container">
+
+				<div class="new-release">
+
+					<div class="new-release-1">
+						<img src="images\images3.jpg">
+					</div>
+					
+
+					<div class="new-release-2">
+						<img src="images\shutterstock_1619586861.jpg">
+					</div>
+
+					<div class="new-release-3">
+						<img src="images\images (1).jpg">
+					</div>
+
+				</div>
+
+				<div class="latest-release">
+					<h4>Latest Release </h4>
+						
+					<div class="onism onism-1">
+						
+						<i class="fa fa-pause">
+							
+							
+					    	
+						</i>
+						<option>Queue</option>
+						<option>Playlist</option>
+						<option>Favourite song</option>
+						
+
+						<div class="onism-icon">
+
+							<img src="C:\Users\Shadab Ahmad Khan\OneDrive\Documents\Major Project 1\images\images3.jpg">
+
+							
+				
+						</div>
+
+						<div class="onism-caption">
+								<h3>Onism </h3>
+								<p>Aug 22,2000</p>
+						</div>
+
+						<div class="duration">
+							<i class="fas fa-ellipsis-h"></i>
+							<p>4:44</p>
+						</div>
+					</div>
+
+					<div class="onism-2 onism">
+						<i class="fa fa-pause"></i>
+
+						<div class="onism-icon">
+
+							<img src="C:\Users\Shadab Ahmad Khan\OneDrive\Documents\Major Project 1\images\images3.jpg">
+							
+				
+						</div>
+
+						<div class="onism-caption">
+								<h3>Onism </h3>
+								<p>Aug 22,2000</p>
+						</div>
+
+						<div class="duration">
+							<i class="fas fa-ellipsis-h"></i>
+							<p>4:44</p>
+						</div>
+					</div>
+
+					<div class="onism-3 onism">
+						<div class="onism-icon">
+							<i class="fa fa-pause"></i>
+							<img src="C:\Users\Shadab Ahmad Khan\OneDrive\Documents\Major Project 1\images\images3.jpg">
+							
+				
+						</div>
+
+						<div class="onism-caption">
+								<h3>Onism </h3>
+								<p>Aug 22,2000</p>
+						</div>
+
+						<div class="duration">
+							<i class="fas fa-ellipsis-h"></i>
+							<p>4:44</p>
+						</div>
+					</div>
+					<div class="onism-4 onism">
+						<i class="fa fa-pause"></i>
+						<div class="onism-icon">
+
+							<img src="C:\Users\Shadab Ahmad Khan\OneDrive\Documents\Major Project 1\images\images3.jpg">
+							
+				
+						</div>
+
+						<div class="onism-caption">
+								<h3>Onism </h3>
+								<p>Aug 22,2000</p>
+						</div>
+
+						<div class="duration">
+							<i class="fas fa-ellipsis-h"></i>
+							<p>4:44</p>
+						</div>
+					</div>
+				</div>
+
+
+</body>
+</html>
