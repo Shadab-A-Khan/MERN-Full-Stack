@@ -1,0 +1,34 @@
+------HTML----------
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>DOM</title>
+</head>
+<body>
+  <h1 id="One">Heading</h1>
+  <h1 id="Two">Heading</h1>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+document
+#document
+document.getElementById('One');
+
+<h1 id=​"One">​Heading​</h1>​
+var heading=document.getElementById('One');
+undefined
+heading.style.color='red';
+'red'
+heading.style.backgroundColor="cyan";
+'cyan'
