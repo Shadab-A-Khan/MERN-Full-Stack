@@ -21,14 +21,12 @@ ______________________scriptTag.html____________________________________________
 
 ____________________script.js_________________________________________________________________________________
 
-        function(){
+        function sayHello(){
           alert('Hello');
         }
-
-
-        var callHello=document.getElementById('btn',function());
+        var callHello=document.getElementById('btn');
         
-        callHello.addEventListener('click',function());
+        callHello.addEventListener('click',sayHello);
         
         
         ________or_________
