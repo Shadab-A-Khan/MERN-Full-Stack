@@ -21,8 +21,8 @@
 var helloButton=document.getElementById('btn');
 undefined
 helloButton
-<button id=​"btn">​Say Hello​</button>​
+ //<button id=​"btn">​Say Hello​</button>​//
 helloButton.addEventListener('click', function(){
     alert('Hello');
 });
-undefined
+
