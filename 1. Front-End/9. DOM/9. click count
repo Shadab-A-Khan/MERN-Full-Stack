@@ -42,3 +42,7 @@ function addcount(){
 
 var clickBox=document.getElementById('box');
 clickBox.addEventListener('click',addcount);
+
+
+
+_________________________________________________________________________________________________________________________________________________
