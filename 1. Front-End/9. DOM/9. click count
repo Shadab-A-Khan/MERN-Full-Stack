@@ -1,0 +1,44 @@
+______________HTML_______________________
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Click Count</title>
+</head>
+
+  <body>
+  
+        <div id="box">
+        </div>
+
+       <script  type="text/javascript" src="script.js">
+       </script>
+      
+  </body>
+  
+</html>
+---------------------------------------------------------------------------------------------------------------------------------------
+
+______________CSS_______________________
+
+#box{
+    height: 100px;
+    width: 100px;
+    background-color:red;
+    margin:auto;
+    margin-top:150px;
+}
+----------------------------------------------------------------------------------------------------------------------------------------
+______________JAVASCRIPT_______________________
+
+
+var count=0;
+function addcount(){
+    count++;
+    console.log("Box Clicked " + count +" times")
+}
+
+var clickBox=document.getElementById('box');
+clickBox.addEventListener('click',addcount);
