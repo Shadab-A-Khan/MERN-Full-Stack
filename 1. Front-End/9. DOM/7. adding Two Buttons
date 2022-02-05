@@ -13,7 +13,7 @@ ________________________________________________________________________________
     
     <button id="btn1" onclick="alert('Hello!!')">Button 2</button>
                        <!--or -->
- <!--   <button id="btn1" onclick="sayHello()">Button 2</button>     -->               <!--we can call the fucntion as well-->
+ <!--     <button id="btn1" onclick="sayHello()">Button 2</button>      -->               <!--we can call the fucntion as well-->
     
     
     <button id="btn2">Button 1</button>
