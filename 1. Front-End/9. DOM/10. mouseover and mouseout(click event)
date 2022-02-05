@@ -1,0 +1,51 @@
+_____________________HTML_______________________________________________
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Click Count</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+  <body>
+  
+        <div id="outer">
+        </div>
+
+       <script  type="text/javascript" src="script.js">
+       </script>
+      
+  </body>
+  
+</html>
+
+
+
+_______________________style.css_______________________________
+
+
+#outer{
+    height: 100px;
+    width: 100px;
+    /*background-color:red;*/
+    margin:auto;
+    margin-top:150px;
+    border: 2px solid red;
+}
+
+
+
+
+___________________________script.js______________________________
+
+
+var mouseOver=document.getElementById('outer');
+mouseOver.addEventListener('mouseover', function(){
+    console.log('mouse over');
+});
+var mouseOut=document.getElementById('outer'); 
+mouseOut.addEventListener('mouseout',function(){
+    console.log('mouse out');
+});
