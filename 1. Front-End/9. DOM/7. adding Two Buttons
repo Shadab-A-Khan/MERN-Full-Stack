@@ -1,0 +1,35 @@
+adding Two Buttons (internally and externally)
+___________________________________________________________________________________________
+---------HTML--------
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Event Handling</title>
+</head>
+  <body>
+    
+    <button id="btn1" onclick="alert('Hello!!')">Button 2</button>
+    <button id="btn2">Button 1</button>
+
+    <script  type="text/javascript" src="script.js">
+      
+    </script>
+  </body>
+</html>
+
+
+
+
+___________________________________________________________________________________________
+-------script.js-----
+
+
+        function sayHello(){
+          alert('Hello');
+        }
+        var callHello=document.getElementById('btn2');
+        
+        callHello.addEventListener('click',sayHello);
