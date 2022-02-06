@@ -1,0 +1,29 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+______________________script.js______________________________________
+
+
+var keyPressEvent=document.getElementById('search');
+keyPressEvent.addEventListener('keydown' ,function(){
+    console.log('key down Event is Happening');
+});
+
+var keyPressEvent=document.getElementById('search');
+keyPressEvent.addEventListener('keyup' ,function(){
+    console.log('key up Event is Happening');
+});
