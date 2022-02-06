@@ -1,0 +1,6 @@
+<!-- keydown -->
+____________script.js___________________
+var keyPressEvent=document.getElementById('search');
+keyPressEvent.addEventListener('keydown' ,function(){
+    console.log('key down Event is Happening');
+});
