@@ -1,0 +1,67 @@
+_____________________html_____________________________
+
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Click Count</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+  <body>
+  
+        <div id="outer">
+          <div id="inner"></div>
+        </div>
+        
+       <script  type="text/javascript" src="script.js">
+       </script>
+      
+  </body>
+  
+</html>
+
+
+
+
+
+_____________________style.css__________________________________
+
+#outer{
+    height: 200px;
+    width: 200px;
+    background-color:red;*/
+    margin:auto;
+    margin: 50px;
+    padding: 50px;
+    box-sizing: border-box;
+    
+}
+#inner{
+    height: 100px;
+    width: 100px;
+    /*margin: 50px;*/
+    background-color: cyan;
+}
+
+
+
+
+
+
+__________________script.js_________________________________________
+
+
+<!-- ------clicking on inner and Outer div------ -->
+
+var clickOnInnerDiv=document.getElementById('inner');
+clickOnInnerDiv.addEventListener('click' ,function(){
+    console.log('clicking on inner div');
+});
+
+var clickOnOuterDiv=document.getElementById('outer');
+clickOnOuterDiv.addEventListener('click' ,function(){
+    console.log('clicking on outer div');
+});
