@@ -1,0 +1,6 @@
+key code is used to keep the track of which key has been pressed
+
+var keyPressEvent=document.getElementById('search');
+keyPressEvent.addEventListener('keyup' ,function(event){
+    console.log('key up Event is Happening' ,event.keyCode);
+});
