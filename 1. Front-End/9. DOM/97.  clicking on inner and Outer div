@@ -65,3 +65,6 @@ var clickOnOuterDiv=document.getElementById('outer');
 clickOnOuterDiv.addEventListener('click' ,function(){
     console.log('clicking on outer div');
 });
+
+
+_______________________________________________________________________________________________________________
