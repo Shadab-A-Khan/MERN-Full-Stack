@@ -1,0 +1,11 @@
+<!-- ------clicking on inner and Outer div------ -->
+
+var clickOnInnerDiv=document.getElementById('inner');
+clickOnInnerDiv.addEventListener('click' ,function(){
+    console.log('clicking on inner div');
+});
+
+var clickOnOuterDiv=document.getElementById('outer');
+clickOnOuterDiv.addEventListener('click' ,function(){
+    console.log('clicking on outer div');
+});
