@@ -1,6 +1,9 @@
-window.scrollTO  --> it is used to set the tart positon in px , 
-meanining from initilal position to destination point
-
+_______________________________________________________________________________________________________________________________
+**window.scrollTO  --> it is used to set the tart positon in px , 
+**meanining from initilal position to destination point
+**vertical movement  |
+                     |
+                     V
 
 ______________________________________________________
 
@@ -11,3 +14,27 @@ window.scrollTo(0,200);   //from start  to 200px down
 window.scrollTo(0,600);   //from start  to 600px down
 
 ______________________________________________________
+
+
+
+_____________________________________________________________________
+
+********  window.pageYOffset  ******
+
+window.pageYOffset --> it points the current positon from the top
+_____________________________________________________________________
+
+
+
+
+
+
+_____________________________________________________________________
+
+*******  window.scrollBy(0, 100); *****
+window.scrollBy(0, 100);               -->it will scroll the page by 100px
+
+_____________________________________________________________________
+
+_______________________________________________________________________________________________________________________________________________________
+
