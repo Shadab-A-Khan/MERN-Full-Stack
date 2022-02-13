@@ -1,10 +1,48 @@
 ________________________________________________________________
 
+** it will keep scrolling until there is no room for srolling 
+
+
 //smooth scrolling with Interval
 
+_________________________________________________________________
+
+
+____________________________
 
 var scollInerval=setInterval(function(){
     window.scrollBy(0,50);                 //50px down in each interval
 },500);                                    //each scroll has an interval of 500 mili second
 
+____________________________
+
+
+**when you will try to sroll up , it will drag you down,
+  why??
+  --because we have started an interval
+
 _________________________________________________________________
+   so to stop scrolling down
+           we use 
+             |
+             |
+             V
+   clearInterval(nameOfTheIntervalVariable);
+   i.e., clearInterval(scollInerval);
+             |
+             |
+             V
+             
+___________________________
+
+var scollInerval=setInterval(function(){
+    window.scrollBy(0,50);                 
+},500); 
+
+
+clearInterval(scollInerval);
+_____________________________
+             
+             
+  
+  
