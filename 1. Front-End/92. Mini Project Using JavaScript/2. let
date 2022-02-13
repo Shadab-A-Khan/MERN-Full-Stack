@@ -14,12 +14,12 @@ ______________________________________________
 //Hoisting performed
 //output :  10 40 undefined
 //line 10 can also be writen at line 3 it will result the same
-//using Keywork let we can create functions in BLOCK SCOPE
 _____________________________________________
 
 
 ___________________________________________________________________________________________________________________________________________________________________________
 
+//using Keywork let we can create functions in BLOCK SCOPE
 //let is introduce in ES6
 //if we write let in line 28 (let b=40;) it will generate error , because b is avilable within that area only it is not globally defined
 
