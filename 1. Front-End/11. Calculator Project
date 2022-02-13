@@ -1,0 +1,201 @@
+________HTML_____________
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Calculator</title>
+	<link rel="stylesheet" type="text/css" href="calculator.css">
+</head>
+<body>
+	<div id="tag">
+		<h1 id="tagcolor">CALCULATOR</h1>
+	</div>
+
+	<div id="calculator">
+
+
+		<div id="display">
+			
+		</div>
+		
+
+         <div class="button">
+			 <button class="btn" type="text" data-value="/" class="buttoncolor">/</button>
+		 </div>
+		 <div class="button">
+			 <button class="btn" type="text" data-value="*" class="buttoncolor">*</button>
+		 </div>
+		 <div class="button">
+		 	 <button class="btn" type="text" data-value="%" class="buttoncolor">%</button>
+		 </div>
+		 <div class="button">
+			 <button class="btn" type="text" data-value="+" class="buttoncolor">+</button>
+		 </div>
+		 <div class="button">
+			 <button class="btn" type="text" data-value="1">1</button>
+		 </div>
+		 <div class="button">
+			 <button class="btn" type="text" data-value="2">2</button>
+		 </div>
+		 <div class="button">
+			 <button class="btn" type="text" data-value="3">3</button>
+		 </div>
+		 <div class="button">
+			 <button class="btn" type="text" data-value="-">-</button>
+		 </div>
+		 
+		 <div class="button">
+			 <button class="btn" type="text" data-value="4">4</button>
+		 </div>
+		 <div class="button">
+			 <button class="btn" type="text" data-value="5">5</button>
+		 </div>
+		 <div class="button">
+			 <button class="btn" type="text" data-value="6" >6</button>
+		 </div>
+		 <div class="button">
+			 <button class="btn" type="text" data-value="=">= </button>
+		 </div>
+		 <div class="button">
+			 <button class="btn" type="text" data-value="7">7</button>
+		 </div>
+		 <div class="button">
+			 <button class="btn" type="text" data-value="8">8</button>
+		 </div>
+		 <div class="button">
+		 	 <button class="btn" type="text" data-value="9">9</button>
+		 </div>
+		 <div class="button">
+			 <button class="btn" type="text" data-value="0">0</button>
+		 </div>
+		 
+		 
+		 
+
+			
+		
+
+		
+	</div>
+
+
+  <script type="text/javascript" src="calculator.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+_________CSS_______________________
+
+
+
+
+#display{
+	width: 100%;
+	height: 30%;
+	border:  2px solid darkblue;
+}
+#calculator{
+	height: 600px;
+	width: 500px;
+	margin: auto;
+    border:  2px solid darkblue;
+}
+
+.button{
+	
+	margin-top: 10px;
+	display:inline;
+	
+}
+.btn{
+	padding-left: 10px;
+    height: 17%;
+	width: 24%;
+
+}
+#tag{
+	background-color: black;
+	height: 80px;
+	width: 500px;
+	margin: auto;
+	position: relative;
+	
+}
+#tagcolor{
+	/*margin-left: auto;*/
+	padding-left: 50px;
+	color: white ;
+	position: absolute;
+}
+.buttoncolor{
+	color: darkblue;
+}
+
+
+
+
+
+
+
+
+
+
+
+_________JS______________
+
+
+
+var button = document.getElementsByClassName("btn");
+var display = document.getElementById("display");
+       var number1 = null;
+       var operator = null;
+       var number2 = null;
+       for (let i = 0; i < button.length; i++) {
+           button[i].addEventListener('click', function () {
+               var val = this.getAttribute('data-value');
+               if (val == '+' || val == '-' || val == '*' || val == '/'|| val == '%') {
+                   number1 = parseFloat(display.textContent);
+                   display.innerHTML = "";
+                   operator = val;
+               }
+               else if (val == '=') {
+                   number2 = parseFloat(display.innerText);
+                   display.innerHTML = "";
+                   var output;
+                   if (operator == '+') {
+                       output = eval("number1 + number2");
+                       display.innerHTML = output.toString();
+                   }else if (operator == '-') {
+                       output = eval("number1 - number2");
+                       display.innerHTML = output.toString();
+                   }else if (operator == '*') {
+                       output = eval("number1 * number2");
+                       display.innerHTML = output.toString();
+                   }else if (operator == '/') {
+                       output = eval("number1 / number2");
+                       display.innerHTML = output.toString();
+                   }else if (operator == '%') {
+                       output = eval("number1 % number2");
+                       display.innerHTML = output.toString();
+                   }
+               }
+               else {
+                   display.innerText += val;
+               }
+
+           });
+       }
+       
+       _______________________________________________________________________________________________________________
+       
+       
