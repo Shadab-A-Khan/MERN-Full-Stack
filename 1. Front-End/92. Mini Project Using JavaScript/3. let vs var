@@ -1,0 +1,77 @@
+___________________________________________________________________________________________________________________________________
+let vs var
+______________________________________________
+
+** where using let let will make more sense**
+______________________________________________
+
+
+for(var i=0 ; i<=5 ; i++){
+    setTimeout(function(){
+        console.log(i);
+    },1000);
+}
+
+
+
+output
+6
+6
+6
+6
+6
+6
+
+
+_____________________________________________
+here , the setTimeout is used so the function will run after 1000ms that is 1 sec so the (i will keep moving ahead it will
+not for i sec(i++ ) and at i=6 it will break and at that time the value of i will reach to 6 and it will print 6 time for all
+indices that is 0 ,1 ,2 ,3 ,4, 5  .
+____________________________________
+
+
+
+but we wanted to print  
+0
+1
+2
+3
+4
+5     right???
+
+
+         _________________________  
+         
+                     |
+                     |
+                     V
+                     
+    So here using   let   we will ahieve out target
+         
+sine let is defined for a block scope there will different i value for different block
+every function within set intervel have differnt set of i value
+i is bound to one round of for loop
+
+i.e.,
+
+_________________________________
+
+
+for(let i=0 ; i<=5 ; i++){
+    setTimeout(function(){
+        console.log(i);
+    },1000);
+}
+
+
+output
+0
+1
+2
+3
+4
+5
+
+_________________________________
+
+___________________________________________________________________________________________________________________________________
