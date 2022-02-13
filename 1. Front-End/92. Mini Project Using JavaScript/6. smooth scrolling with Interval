@@ -1,0 +1,10 @@
+________________________________________________________________
+
+//smooth scrolling with Interval
+
+
+var scollInerval=setInterval(function(){
+    window.scrollBy(0,50);                 //50px down in each interval
+},500);                                    //each scroll has an interval of 500 mili second
+
+_________________________________________________________________
