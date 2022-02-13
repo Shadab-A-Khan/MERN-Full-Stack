@@ -1,0 +1,13 @@
+window.scrollTO  --> it is used to set the tart positon in px , 
+meanining from initilal position to destination point
+
+
+______________________________________________________
+
+window.scrollTo(0,200);   //from start  to 200px down
+
+       //or
+
+window.scrollTo(0,600);   //from start  to 600px down
+
+______________________________________________________
