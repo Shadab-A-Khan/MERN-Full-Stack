@@ -1,0 +1,38 @@
+___________for of____________
+
+**it creates a loop iterating over iterable objects
+**for of is just a shorter version of for loop
+
+____________________________________________________________________________________
+
+
+var arr=[ 1, 2, 3 ,4 ,5,];
+
+for(var i=0; i<arr.length ; i++){
+    console.log(i);
+}
+        |
+        |
+        V
+     -----
+for(let i of arr){
+    console.log(i);
+}
+
+
+**they both give the same result
+i.e., 
+
+output
+0
+1
+2
+3
+4
+
+
+
+*****||  for(var i=0; i<arr.length ; i++) |    and     | for(let i of arr)   ||*****   ---> they both does the same thing
+
+
+_________________________________________________________________________________________
