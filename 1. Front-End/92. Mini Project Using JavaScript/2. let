@@ -1,0 +1,67 @@
+_______LET____________
+
+
+var a=10;
+if(a<=10){
+    var b=40;
+}else{
+    var c=50;
+}
+console.log(a,b,c);
+
+______________________________________________
+// a b c are available globally , 
+//Hoisting performed
+//output :  10 40 undefined
+//line 10 can also be writen at line 3 it will result the same
+//using Keywork let we can create functions in BLOCK SCOPE
+_____________________________________________
+
+
+___________________________________________________________________________________________________________________________________________________________________________
+
+//let is introduce in ES6
+//if we write let in line 28 (let b=40;) it will generate error , because b is avilable within that area only it is not globally defined
+
+var a=10;
+if(a<=10){
+    let b=40;
+}else{
+    var c=50;
+}
+console.log(a,b,c); 
+
+
+__________________________
+ouput : ReferenceError: b is not defined.
+__________________________
+
+
+____________________________________________________________________________________________________________________________________________________________________________
+
+
+
+
+
+***we can not access or print block variable before initiizing***
+
+
+var a=10;
+if(a<=10){
+    console.log(b);                   //cannot be accessed before  , this is temporary dead area
+    let b=20;                         //initilizing
+}
+
+
+_______________________________
+ouput: ReferenceError: Cannot access 'b' before initialization
+_______________________________
+
+
+
+
+____________________________________________________________________________________
+
+
+
+
