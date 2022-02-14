@@ -1,0 +1,19 @@
+
+in reference to the resume project
+          |
+          |
+          V
+**Animation of Skills Bar**
+**ensure that initial width of colored skill divs is Zero -> initilised/Reset to 0 width value to skill level ar regular interval
+**it can be done when skill section is visible
+**so check skill container is visible
+**start animation on every skil -> increase skill width from 0 to skill level
+**add data attributes to skill bar
+   i.e., data-skill-level
+              skill-level i.e.,   C++  -> 50%
+                                  Java -> 90%
+                                  CSS  -> 70%
+                                         etc..,
+
+
+___________________________________________________________________________________________________
