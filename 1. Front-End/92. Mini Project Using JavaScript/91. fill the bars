@@ -1,7 +1,7 @@
 // in reference to the resume project
-// |
-// |
-// V
+//       |
+//       |
+//       V
 // **Animation of Skills Bar**
 // **ensure that initial width of colored skill divs is Zero -> initilised/Reset to 0 width value to skill level ar regular interval
 // **it can be done when skill section is visible
@@ -54,7 +54,10 @@ function checkScroll(){
         animationDone=true;
         console.log('skill section is visisble');
         fillBars();
-
+     //when we leave the container it change the filled bar to 0 again
+    }else if(coordinates.top>window.innerHeight){
+        animationDone=false;
+        initiliseBars();
     }
 }
 
