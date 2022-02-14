@@ -20,7 +20,7 @@ var anchaorTag = document.querySelectorAll('.nav-menu a');
         	}
         	window.scrollBy(0,50);
         	
- 	});
+ 	},20);
  }
 
 
