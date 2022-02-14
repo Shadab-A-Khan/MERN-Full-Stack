@@ -1,0 +1,28 @@
+//smooth scroll for a targeted section
+
+var anchaorTag = document.querySelectorAll('.nav-menu a');
+ 
+ for(var i=0; i<anchaorTag.length ;i++){
+ 	navMenuAnchorTags[i].addEventListener('click',function (event) {
+ 		event.preventDefault();
+        var targetSectionID=this.textContent.trim().toLowerCase();
+        var targetSection=document.getElementById(targetSectionID);
+        console.log(targetSection);
+        var intervel=setIntervel(function(){
+        	var targetSectionCordinates=targetSection.getBoundingClient();
+        	if(targetSectionCordinates.top<=0){
+        		clearInterval(intervel);
+        		return;
+        	}
+        	window.scrollBy(0,50);
+        	
+ 	});
+ }
+
+ // textContent-- to fetch the text only because  # can also be there
+
+ // .trim-- is used to remove the unnecessary spaces
+
+ // toLowerCase()-- is used to convert the textContent into toLowerCase 
+ // because the names are generaly start with capital letter but the tags 
+ // are in small letter
