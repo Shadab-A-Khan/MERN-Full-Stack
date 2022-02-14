@@ -14,15 +14,18 @@
 //                         CSS  -> 70%
 //                                etc..,
 
-var progressBars=document.querySelectorAll('.skill-progress > div');//.skill-progress > div (divs within skill-progress)
+_________________________________________________________________________________________________________________________________
+
+
+var progressBars=document.querySelectorAll('.skill-progress > div');     //.skill-progress > div (divs within skill-progress)
 var skillsContiner=document.getElementById('skills-container');
 window.addEventListener('scroll',checkScroll);
-var animationDone =false;//to not the fire again and again just fire once , when we reach the skill container
+var animationDone =false;                                                //to not the fire again and again just fire once , when we reach the skill container
 
 
 function initiliseBars(){
     for(let bar of progressBars){
-        bar.style.width= 0 +'%';  //set the initial bar width to 0 in %
+        bar.style.width= 0 +'%';                                         //set the initial bar width to 0 in %
     }
 }
 
@@ -39,7 +42,7 @@ function fillBars(){
             return;
             }
             currentWidth++;
-            bar.style.width=currentWidth + '%';//set the width of the bar to currentWidth
+            bar.style.width=currentWidth + '%';                          //set the width of the bar to currentWidth
         },5);
 
     }
