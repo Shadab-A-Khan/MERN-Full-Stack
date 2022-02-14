@@ -1,0 +1,17 @@
+
+section.add('click', function(event))
+                                |
+                                |
+                                V
+                                we can add event into the function and 
+                                apply event.preventDefault();
+                                
+                                
+_________________________________________________
+
+section.add('click', function(event){
+   event.preventDefault();
+   });
+   
+_________________________________________________
+                         
