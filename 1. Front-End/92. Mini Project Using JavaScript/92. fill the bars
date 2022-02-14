@@ -1,0 +1,60 @@
+// in reference to the resume project
+// |
+// |
+// V
+// **Animation of Skills Bar**
+// **ensure that initial width of colored skill divs is Zero -> initilised/Reset to 0 width value to skill level ar regular interval
+// **it can be done when skill section is visible
+// **so check skill container is visible
+// **start animation on every skil -> increase skill width from 0 to skill level
+// **add data attributes to skill bar
+// i.e., data-skill-level
+//     skill-level i.e.,   C++  -> 50%
+//                         Java -> 90%
+//                         CSS  -> 70%
+//                                etc..,
+
+var progressBars=document.querySelectorAll('.skill-progress > div');//.skill-progress > div (divs within skill-progress)
+var skillsContiner=document.getElementById('skills-container');
+window.addEventListener('scroll',checkScroll);
+var animationDone =false;//to not the fire again and again just fire once , when we reach the skill container
+
+
+function initiliseBars(){
+    for(let bar of progressBars){
+        bar.style.width= 0 +'%';  //set the initial bar width to 0 in %
+    }
+}
+
+initiliseBars();
+
+//to fill the bars
+function fillBars(){
+    for(let bar of progressBars){
+        let targetWidth=bar.getAttribute('data-bar-width');
+        let currentWidth=0;
+        let interval= setInterval(function(){
+            if(currentWidth>targetWidth){
+            clearInterval(interval);
+            return;
+            }
+            currentWidth++;
+            bar.style.width=currentWidth + '%';//set the width of the bar to currentWidth
+        },5);
+
+    }
+
+}
+
+
+function checkScroll(){
+    //check wheter skill Container is visible
+    var coordinates=skillsContiner.getBoundingClientRect();
+    if(!animationDone && coordinates.top<window.innerHeight){
+        animationDone=true;
+        console.log('skill section is visisble');
+        fillBars();
+
+    }
+}
+
