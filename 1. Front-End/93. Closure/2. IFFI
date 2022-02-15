@@ -1,0 +1,152 @@
+___________________HTML_____________________
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+
+
+    <script src="IFFE1.js"></script>
+    <script src="IFFE2.js"></script>
+    
+</body>
+</html>
+
+___________________________________________________________________________________________________________________________________
+
+___________________________script1____________________________
+
+var name = 'file1';
+
+setTimeout(function(){
+    console.log(name);
+},1000);
+
+
+
+___________________________script2____________________________
+
+var name='file2';
+
+console.log(name);
+
+
+
+                           -----------
+                           ouput:
+                           file2
+                           file2
+                           -----------
+
+
+
+
+
+
+______________________________________________________________________________________________________________________
+                              |
+                              |
+                              1st way
+                              |
+                              |
+                              V
+
+___________________________script1____________________________
+
+function print1(){
+    var name = 'file1';
+
+setTimeout(function(){
+    console.log(name);
+ },1000);
+}
+
+print1(); 
+
+
+
+
+
+___________________________script1____________________________
+
+function print2(){
+    var name='file2';
+    console.log(name);
+}
+
+print2();
+
+
+
+                        -----------
+                        ouput:
+                        file2
+                        file1
+                        -----------
+
+
+
+
+
+
+
+
+
+_________________________________________________________________________________________________________________
+                              |
+                              |
+                             IFFE (2nd way)
+                              |
+                              |
+                              |
+                              V
+___________________________script1____________________________
+
+
+(function print1(){
+    var name = 'file1';
+
+ setTimeout(function(){
+    console.log(name);
+ },1000);
+})();
+
+// print1();
+
+
+__________________________script2____________________________
+
+(function print2(){
+    var name='file2';
+    console.log(name);
+})();
+
+//print2();
+
+
+                      -----------
+                      ouput:
+                      file2
+                      file1
+                      -----------
+
+
+
+
+
+
+
+_________________________________________________________________________________________________________________
+
+
+
+
+
+
