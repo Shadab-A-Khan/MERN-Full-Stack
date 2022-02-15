@@ -1,0 +1,93 @@
+
+//https://www.youtube.com/watch?v=qikxEIxsXco
+//Closures
+
+var i=10;
+
+function outer(){
+   var j=20;
+   console.log(i,j);
+   function inner(){
+      var k=30;
+      console.log(j,k);     
+   }
+   inner();
+}
+outer();
+
+
+//fuction with lexical scope bundaled together called Closures
+//insted of calling lets  return the value
+//Closures remembers functions and its lexical scope(static scope)
+var i=10;
+
+function outer(){
+   var j=20;
+   console.log(i,j);
+   return inner = function(){
+      var k=30;
+      console.log(j,k);     
+   }
+   return inner;
+}
+var inner=outer();
+inner();
+
+
+
+
+
+//eg-2
+function x(){
+   var a=7;
+   function y(){
+      console.log(a);
+   }
+   return y;
+}
+var z=x();
+console.log(z);  //[Function: y]
+//.........
+z();             //7
+
+// z stores x() , x() has value return by y and y remover function means 
+// itself y() and its lexical enviroment i.e., var a=7;
+
+
+
+
+//_________________________
+
+function y(){
+   console.log(a);
+}
+return y;
+
+//or
+
+return function y(){
+   console.log(a);
+}
+//return y;
+
+
+//they both are the same thing
+//_______________________
+
+
+
+
+function x(){
+   var a=7;
+   function y(){
+      console.log(a);
+   }
+   a=100;  // what if we change the value before 100?
+            // it will update the value in console.log(a); 
+            // a is just a reference
+            // so a will point to 100 now
+   return y;//100
+}
+var z=x();
+console.log(z);//[Function: y]
+z();           //100
