@@ -2,6 +2,9 @@
 
 __________________________________________________________________________________________________________________
 //https://www.youtube.com/watch?v=qikxEIxsXco
+//http://pat-whitrock.github.io/blog/2014/04/29/practical-uses-for-closures/
+
+
 //Closures
 
 var i=10;
