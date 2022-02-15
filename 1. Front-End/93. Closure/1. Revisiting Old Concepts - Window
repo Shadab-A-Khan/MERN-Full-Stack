@@ -1,5 +1,5 @@
 _________________________________________________________________________________________________________________________________________________________
-// any thing you create in global context is part of window object
+// any thing you create in global context is part of window object/property
 //here outer is property of window object
 
 ___________________________________________________
