@@ -1,0 +1,55 @@
+_____________________________________________________________________________________________
+
+______________________HTML_______________________
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+
+
+    <script src="IFFE1.js"></script>
+    <script src="IFFE2.js"></script>
+    
+</body>
+</html>
+
+
+
+
+
+______________________JS1_______________________
+
+
+{
+   let name = 'file1';
+
+setTimeout(function(){
+   console.log(name);
+},1000);
+
+}
+
+
+
+
+
+______________________JS2________________________
+
+
+
+{
+    let name='file2';
+    console.log(name);
+}
+
+
+_______________________________________________________________________________________________
+
