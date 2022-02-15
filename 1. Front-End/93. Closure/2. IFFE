@@ -42,8 +42,14 @@ console.log(name);
                            -----------
                            ouput:
                            file2
-                           file2
-                           -----------
+                           file2               it should have been file2
+                                                                   file1
+                           -----------                                  so to fix it we use following
+                                                                        ways |
+                                                                             |
+                                                                             |
+                                                                             V
+                           
 
 
 
