@@ -1,7 +1,9 @@
 _________________________________________________________________________________________________________________________________________________________
 // any thing you create in global context is part of window object/property
 //here outer is property of window object
-
+//code it into chrome extension because,
+//window is a global object for the browser.
+//global is a global object for NodeJS(Most of the editors that run JavaScript uses NodeJS)
 ___________________________________________________
 
 _________________________
