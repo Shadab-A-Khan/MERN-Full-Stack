@@ -46,5 +46,19 @@ output:
 
 
 
+******************
+
+for(let i=1 ; i<=5 ; i++)    //in case of let each
+                             //complete itteration 
+                             //has a seperate i value
+
+{
+   setTimeout(function(){
+      console.log(i);
+   },1000);
+}
+
+*****************
+
 
 
