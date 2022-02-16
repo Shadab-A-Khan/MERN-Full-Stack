@@ -1,0 +1,43 @@
+_______________________________________________________________
+
+const john= {
+    mame: 'john',
+};
+
+function ask(){
+    console.log(this,this.name);
+}
+ask();
+
+
+--------------
+ouput:
+<undefined
+--------------|
+              |
+              V
+________________________________________________________
+
+const john= {
+    name:'john',
+};
+
+function ask(){
+    console.log(this, this.name);
+}
+ask.call(john);  //call will ask to call john
+                 //this is another way of calling
+      //or
+
+ask.apply(john);
+
+
+--------------
+ouput:
+{ name: 'john' } john
+{ name: 'john' } john
+--------------
+
+________________________________________________________
+
+
