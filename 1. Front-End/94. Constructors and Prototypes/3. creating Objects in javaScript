@@ -123,7 +123,7 @@ ________________________________________________________________________________
                                           |
                                           |
                                           V
-________________removing new keyword fromt the student3_____________________________________________
+________________removing new keyword from the student3_____________________________________________
 
 function createStudent(name, rollNumber , marks){
     // var student={}; //new object
