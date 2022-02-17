@@ -70,3 +70,37 @@ ouput:
 _____________________________________________________________________________________________________
 
 
+
+
+
+//__________________________________________________________________________________
+//javaScript allows us to use mathod as a constructor
+//so dont necessarily have to create new object and pass the values to and retur that new object
+//insted using    this  and  new       keyword we can do the same task
+
+
+function createStudent(name, rollNumber , marks){
+    // var student={}; //new object
+    // student.name=name;
+    this.name=name;
+    // student.rollNumber=rollNumber;
+    this.rollNumber=rollNumber;
+    // student.marks=marks;
+    this.marks=marks;
+    // return student;
+}
+
+var student1= new createStudent("ram",1,99);
+var student2=new createStudent("shayam",2,98);
+var student3=new createStudent("sam",3,97);
+
+console.log(student1);
+console.log(student2);
+console.log(student3);
+
+
+_____________________________________________________________________________________________________
+
+
+
+
