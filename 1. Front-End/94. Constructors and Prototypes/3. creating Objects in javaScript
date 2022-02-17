@@ -107,7 +107,40 @@ console.log(student3);
 
 
 _____________________________________________________________________________________________________
+                                          |
+                                          |
+                                          |
+                                          |
+                                          |
+                                          |
+                                          V
+________________removing new keyword fromt the student3_____________________________________________
+
+function createStudent(name, rollNumber , marks){
+    // var student={}; //new object
+    // student.name=name;
+    this.name=name;
+    // student.rollNumber=rollNumber;
+    this.rollNumber=rollNumber;
+    // student.marks=marks;
+    this.marks=marks;
+    // return student;
+}
+
+var student1= new createStudent("ram",1,99);
+var student2=new createStudent("shayam",2,98);
+// var student3=new createStudent("sam",3,97);
+var student3=createStudent("sam",3,97); // if we remove new fromt the student this 
+                                        // it will work as normal function and not as constructor
+                                        //it we try to lok the value glabally which is not defined
+                                        // so it will give undefined value for student3
 
 
+console.log(student1);
+console.log(student2);
+console.log(student3);
+
+
+//_____________________________________________________________________________________________________
 
 
