@@ -130,7 +130,8 @@ function createStudent(name, rollNumber , marks){
 var student1= new createStudent("ram",1,99);
 var student2=new createStudent("shayam",2,98);
 // var student3=new createStudent("sam",3,97);
-var student3=createStudent("sam",3,97); // if we remove new fromt the student this 
+var student3=createStudent("sam",3,97); // usign new we are binding the newly created object removing it makes it unbounded 
+                                        //if we remove new fromt the student this 
                                         // it will work as normal function and not as constructor
                                         //it we try to lok the value glabally which is not defined
                                         // so it will give undefined value for student3
