@@ -1,0 +1,52 @@
+//______________________________________________________________________________________
+    //adding Behaviour to objects
+    // function Vechile(numWhell , prince){
+    //     this.numWhell=numWhell;
+    //     this.prince=prince;
+    // }
+
+    // var vechile1 = new Vechile(2,50000);
+    // var vechile2 = new Vechile(4,500000);
+
+    // console.log(vechile1);
+    // console.log(vechile2);
+
+                // |
+                // |
+                // V
+
+      // if we want to add certain functionality to the object
+
+      //get price
+      
+      
+_________________________________________________________________
+
+      function Vechile(numWhell , prince){
+        this.numWhell=numWhell;
+        this.prince=prince;
+        
+        this.getPrice=function(){
+            return this.prince;
+        } 
+        
+      }
+
+    var vechile1 = new Vechile(2,50000);
+    var vechile2 = new Vechile(4,500000);
+
+    // console.log(vechile1);
+    // console.log(vechile2);
+
+   console.log(vechile1.getPrice()); 
+   
+   --------------
+   output
+   50000
+   --------------
+   
+   
+_________________________________________________________________
+
+
+
