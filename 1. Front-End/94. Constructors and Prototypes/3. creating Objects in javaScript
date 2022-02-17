@@ -1,0 +1,72 @@
+_________________________________________________________________________________________________
+
+
+var student1={
+    name:"abc",
+    rollNo:1,
+    marks:99,
+};
+var student2={
+    name:"def",
+    rollNo:5,
+    marks:99,
+};
+var student3={
+    name:"fhi",
+    rollNo:3,
+    marks:99,
+};
+var student4={
+    name:"ghi",
+    rollNo:9,
+    marks:99,
+};
+
+console.log(student1);
+console.log(student2);
+console.log(student3);
+console.log(student4);
+
+------------------------------------------
+ouput:
+{ name: 'abc', rollNo: 1, marks: 99 }
+{ name: 'def', rollNo: 5, marks: 99 }
+{ name: 'fhi', rollNo: 3, marks: 99 }
+{ name: 'ghi', rollNo: 9, marks: 99 }
+------------------------------------------
+
+_________________________________________________________________________________________________
+
+
+//if we want to create 100s of students and writing the same code for all 100 hunder student is not optimal
+//so we use functions to create object
+
+
+_____________________________________________________________________
+function createStudent(name, rollNumber , marks){
+    var student={};
+    student.name=name;
+    student.rollNumber=rollNumber;
+    student.marks=marks;
+    return student;
+}
+
+var student1=createStudent("ram",1,99);
+var student2=createStudent("shayam",2,98);
+var student3=createStudent("sam",3,97);
+
+console.log(student1);
+console.log(student2);
+console.log(student3);
+
+
+------------------------------------------
+ouput:
+{ name: 'ram', rollNumber: 1, marks: 99 }
+{ name: 'shayam', rollNumber: 2, marks: 98 }
+{ name: 'sam', rollNumber: 3, marks: 97 }
+------------------------------------------
+
+_____________________________________________________________________________________________________
+
+
