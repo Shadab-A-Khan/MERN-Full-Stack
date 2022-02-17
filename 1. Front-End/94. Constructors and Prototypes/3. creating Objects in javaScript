@@ -44,7 +44,7 @@ ________________________________________________________________________________
 
 _____________________________________________________________________
 function createStudent(name, rollNumber , marks){
-    var student={};
+    var student={}; //new object
     student.name=name;
     student.rollNumber=rollNumber;
     student.marks=marks;
