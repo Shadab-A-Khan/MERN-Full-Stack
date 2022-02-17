@@ -106,6 +106,15 @@ console.log(student2);
 console.log(student3);
 
 
+
+------------------------------------------
+{ name: 'ram', rollNumber: 1, marks: 99 }
+{ name: 'shayam', rollNumber: 2, marks: 98 }
+{ name: 'sam', rollNumber: 3, marks: 97 }
+------------------------------------------
+
+
+
 _____________________________________________________________________________________________________
                                           |
                                           |
@@ -140,6 +149,14 @@ var student3=createStudent("sam",3,97); // usign new we are binding the newly cr
 console.log(student1);
 console.log(student2);
 console.log(student3);
+
+
+------------------------------------------
+ouput:
+createStudent { name: 'ram', rollNumber: 1, marks: 99 }
+createStudent { name: 'shayam', rollNumber: 2, marks: 98 }
+undefined
+------------------------------------------
 
 
 //_____________________________________________________________________________________________________
