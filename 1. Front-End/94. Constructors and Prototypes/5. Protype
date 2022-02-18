@@ -82,4 +82,46 @@ prince: 500000
 ------------------------------------------------
 
 ______________________________________________________________________________________________________________
+                                   |
+                                   |
+                                   |
+                                   to access the properties of prototype
+                                   |
+                                   |
+                                   V
+ ______________________________________________________________________________________________________________
+
+
+function Vechile(numWhell , prince){
+    this.numWhell=numWhell;
+    this.prince=prince;
+
+    // this.getPrice=function(){
+    //     return this.prince;
+    // } 
+    
+}
+
+Vechile.prototype.getPrice=function(){
+         return this.prince;
+     } 
+
+var vechile1 = new Vechile(2,50000);
+var vechile2 = new Vechile(4,500000);
+ƒ (){
+         return this.prince;
+     }
+     
+     
+---------------------------------------
+ouput:
+
+Vechile.prototype
+{getPrice: ƒ, constructor: ƒ}
+getPrice: ƒ ()
+constructor: ƒ Vechile(numWhell , prince)
+[[Prototype]]: Object
+---------------------------------------
+
+______________________________________________________________________________________________________________
 
