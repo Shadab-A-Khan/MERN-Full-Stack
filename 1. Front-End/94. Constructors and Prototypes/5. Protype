@@ -1,0 +1,85 @@
+without using Prototype
+                      |
+                      |
+                      V
+______________________________________________________________________________________________________________
+ function Vechile(numWhell , prince){
+        this.numWhell=numWhell;
+        this.prince=prince;
+
+        this.getPrice=function(){
+            return this.prince;
+        } 
+
+    }
+
+    var vechile1 = new Vechile(2,50000);
+    var vechile2 = new Vechile(4,500000);
+
+    console.log(vechile1);
+    console.log(vechile2);
+    
+    
+------------------------------------------------
+ouput:
+Vechile {numWhell: 2, prince: 50000, getPrice: ƒ}  //  copy of function get price , westage of memory
+getPrice: ƒ ()
+numWhell: 2
+prince: 50000
+[[Prototype]]: Object
+VM348:15 
+Vechile {numWhell: 4, prince: 500000, getPrice: ƒ} //  copy of function get price , westage of memory
+getPrice: ƒ ()
+numWhell: 4
+prince: 500000
+[[Prototype]]: Object
+------------------------------------------------
+
+______________________________________________________________________________________________________________
+                                          |
+                                          |
+                                     using Prototype
+                                          |
+                                          |
+                                          V                                         
+ ______________________________________________________________________________________________________________
+
+
+function Vechile(numWhell , prince){
+    this.numWhell=numWhell;
+    this.prince=prince;
+
+    // this.getPrice=function(){
+    //     return this.prince;
+    // } 
+    
+}
+
+Vechile.prototype.getPrice=function(){   //creating prototype
+         return this.prince;
+     } 
+
+var vechile1 = new Vechile(2,50000);
+var vechile2 = new Vechile(4,500000);
+
+
+------------------------------------------------
+ouput:
+
+ƒ (){
+         return this.prince;
+     }
+vechile1
+Vechile {numWhell: 2, prince: 50000}    // no copy of function get price
+numWhell: 2
+prince: 50000
+[[Prototype]]: Object
+vechile2
+Vechile {numWhell: 4, prince: 500000} // no copy of function get price
+numWhell: 4
+prince: 500000
+[[Prototype]]: Object
+------------------------------------------------
+
+______________________________________________________________________________________________________________
+
