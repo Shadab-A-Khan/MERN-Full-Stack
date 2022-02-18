@@ -1,0 +1,25 @@
+___________________________________________________________________________________
+
+class vechile{
+
+    constructor(numWheels , price){
+        this.numWheels=numWheels;
+        this.price;
+    }
+
+    getPrice(){
+        return this.price;
+    }
+}
+
+var vechile1=new vechile(2,50000);
+var vechile2=new vechile(4,500000);
+
+console.log(vechile1);
+
+-----------------------------
+ouput:
+vechile { numWheels: 2 }
+-----------------------------
+
+___________________________________________________________________________________
