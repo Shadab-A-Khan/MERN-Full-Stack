@@ -1,0 +1,41 @@
+function Vechile(numWhell , prince){
+    this.numWhell=numWhell;
+    this.prince=prince;
+
+    // this.getPrice=function(){
+    //     return this.prince;
+    // } 
+    
+}
+
+Vechile.prototype.getPrice=function(){
+         return this.prince;
+     } 
+
+var vechile1 = new Vechile(2,50000);
+var vechile2 = new Vechile(4,500000);
+ƒ (){
+         return this.prince;
+     }
+Vechile.prototype.isPrototypeOf(vechile1);
+true
+Vechile.prototype.color;
+undefined
+Vechile.prototype.color="black";
+'black'
+Vechile.prototype
+{color: 'black', getPrice: ƒ, constructor: ƒ}
+vechile1.color
+'black'
+vechile2.color
+'black'
+
+
+Vechile.getPrototypeOf(vechile1)===vechile1.prototype;
+VM526:1 Uncaught TypeError: Vechile.getPrototypeOf is not a function
+    at <anonymous>:1:9
+(anonymous) @ VM526:1
+Object.getPrototypeOf(vechile1)===vechile.prototype;
+
+Object.getPrototypeOf(vechile1)===Vechile.prototype;
+true
