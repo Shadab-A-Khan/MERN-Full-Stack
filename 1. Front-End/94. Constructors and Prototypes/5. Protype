@@ -116,7 +116,7 @@ var vechile2 = new Vechile(4,500000);
 ---------------------------------------
 ouput:
 
-Vechile.prototype
+Vechile.prototype          ********************************
 {getPrice: ƒ, constructor: ƒ}
 getPrice: ƒ ()
 constructor: ƒ Vechile(numWhell , prince)
