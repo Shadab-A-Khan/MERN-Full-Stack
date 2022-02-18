@@ -1,0 +1,34 @@
+__________________________________________________________________________________
+
+class Vechile{
+
+    constructor(numWheels , price){
+        this.numWheels=numWheels;
+        this.price;
+    }
+
+    getPrice(){
+        return this.price;
+    }
+}
+
+class car extends Vechile{
+    
+    constructor(numDoors){
+        super(4,10000);
+       this.numDoors=numDoors;
+    }
+}
+
+// var vechile1=new vechile(2,50000);
+// var vechile2=new vechile(4,500000);
+
+var c = new car(4);
+console.log(c);
+
+--------------------------------------------
+ouput:
+car { numWheels: 4, numDoors: 4 }
+--------------------------------------------
+
+__________________________________________________________________________________
