@@ -15,7 +15,7 @@ class Vechile{
 class car extends Vechile{
     
     constructor(numDoors){
-        super(4,10000);
+        super(4,10000);   // for extending this is not allowed before super
        this.numDoors=numDoors;
     }
 }
