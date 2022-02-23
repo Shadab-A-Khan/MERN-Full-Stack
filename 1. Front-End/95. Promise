@@ -1,0 +1,71 @@
+____________________________________________________________________________________________
+
+
+var Promise=new Promise(()=>{});
+    console.log(Promise);
+
+-------------------------------------
+ output:
+ Promise {<pending>}[[Prototype]]: Promise
+ [[PromiseState]]: "pending"
+ [[PromiseResult]]: undefined
+ -------------------------------------
+ 
+ 
+ 
+ ____________________________________________________________________________________________
+ 
+//resolve
+
+var promise=new Promise((resolve, reject)=>{
+    resolve("yay, order got resolved");
+});
+console.log(promise);
+
+
+-------------------------------------
+ output:
+Promise {<fulfilled>: 'yay, order got resolved'}
+[[Prototype]]: Promise
+[[PromiseState]]: "fulfilled"
+[[PromiseResult]]: "yay, order got resolved"
+-------------------------------------
+
+____________________________________________________________________________________________
+
+//reject
+
+
+var promise=new Promise((resolve, reject)=>{
+    reject("somthing went wrong");
+});
+console.log(promise);
+
+____________________________________________________________________________________________
+
+
+
+
+____________________________________________________________________________________________
+
+//setTimeOut
+
+
+      var promise=new Promise((resolve, reject)=>{
+       setTimeout(()=>{
+        resolve({message:'sucess'})
+       },3000);
+       resolve("promise sucessful");
+    });
+    console.log(promise);
+    
+
+-------------------------------------
+ output:
+Promise {<fulfilled>: 'promise sucessful'}
+[[Prototype]]: Promise
+[[PromiseState]]: "fulfilled"
+[[PromiseResult]]: "promise sucessful"
+-------------------------------------
+    
+    
