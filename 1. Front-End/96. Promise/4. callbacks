@@ -1,0 +1,22 @@
+________________________________________________________
+
+//callbacks
+
+function greet(name,callbacks){
+    console.log('Hi $(name)');
+    callbacks();
+}
+
+function askQuestion(){
+    console.log('How are you ?');
+}
+
+greet('john', askQuestion);
+
+----------------------
+ouput:
+Hi $(name)
+How are you ?
+----------------------
+
+________________________________________________________
