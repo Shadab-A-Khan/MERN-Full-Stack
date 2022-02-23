@@ -1,0 +1,32 @@
+____________________________________________________________________________________________
+
+var promise=new Promise((resolve, reject) => {
+    setTimeout(()=>{
+     reject({message:'error'})
+    },3000);
+    
+ });
+
+
+promise
+
+.then((data) => {
+    console.log(data);
+})
+.catch((error) => {
+    console.log('error', error);
+});
+
+
+----------------------------------------------------
+ouput:
+Promise {<pending>}
+[[Prototype]]: Promisecatch: ƒ catch()constructor: ƒ Promise()finally: ƒ finally()then: ƒ then()Symbol(Symbol.toStringTag): "Promise"
+[[Prototype]]: Object[[PromiseState]]: "pending"
+[[PromiseResult]]: undefined
+
+error {message: 'error'}
+----------------------------------------------------
+
+
+____________________________________________________________________________________________
