@@ -1,0 +1,29 @@
+____________________________________________________________________________________________
+
+var promise=new Promise((resolve, reject) => {
+    setTimeout(()=>{
+     resolve({message:'successful'})
+    },3000);
+    
+ });
+
+promise.then((data) => {
+    console.log(data);
+});
+
+
+
+-------------------------------------
+ output:
+Promise {<pending>}
+[[Prototype]]: Promise
+[[PromiseState]]: "fulfilled"
+[[PromiseResult]]: undefined
+
+{message: 'successful'}
+message: "successful"
+[[Prototype]]: Object
+-------------------------------------
+
+____________________________________________________________________________________________
+
