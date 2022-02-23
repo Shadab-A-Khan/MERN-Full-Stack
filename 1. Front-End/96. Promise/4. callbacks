@@ -3,7 +3,7 @@ ________________________________________________________
 //callbacks
 
 function greet(name,callbacks){
-    console.log('Hi $(name)');
+    console.log(`Hi ${name}`);
     callbacks();
 }
 
