@@ -1,0 +1,24 @@
+cd 
+
+git add fileName.txt
+
+git sumit
+
+git staus             :-difine the status of the file  (modified
+
+git diff              :- change made in the file/directory
+
+ -a
+ 
+ ls                   :- list of elements in any perticular file/directory
+ 
+ -m                   :- give a message
+                      :- git commit -m 'message to be given'
+  
+ --help               : to get the commands and instruction from the git
+ 
+ git add .            :- it adds every thing in that path
+ 
+ git log              :- it will store the log of commits that we have done
+                         changes what we have done (eg , log of attendence)
+ 
