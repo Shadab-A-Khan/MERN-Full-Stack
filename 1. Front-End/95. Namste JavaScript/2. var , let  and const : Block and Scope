@@ -68,7 +68,12 @@ ___________________________________
 
 _________________________________________________________
 
-**** in case of let ***
+
+
+
+
+
+####____****---- in case of let ----***_____####
 
 ___________________________________
 
@@ -95,6 +100,36 @@ ___________________________________
 //100
 //---------------
 
+
+//______________________________________________________
+
+
+
+//______________________________________________________
+
+//shadowing
+
+
+let b = 100;
+{
+  let b=10; 
+  
+  console.log(b);
+ 
+}
+console.log(b);
+
+
+//let b=100 , a is stored in the script scope 
+//let b=10    a referes to the  Block scope 
+              so both will refer to differnt spaces and hence both will print differnt values
+              unlike in case of var both were refering to the same global space and value of 'a' were getting updated.
+
+//---------------
+//ouput:
+//10
+//100
+//---------------
 
 //______________________________________________________
 
