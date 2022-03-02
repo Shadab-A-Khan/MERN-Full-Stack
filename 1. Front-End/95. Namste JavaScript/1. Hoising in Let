@@ -22,7 +22,7 @@ ________________________________________________________________________________
   console.log(a);
   console.log(b);
   var a=10;  // var a is hoisted in Gloabal scope and hence result undefined
-  let b=100; // let a is hoisted in script and it is in a temporal dead zone 
+  let b=100; // let a is hoisted but in script evnironment and hence it is in a temporal dead zone 
              // and it is not accessiable until value is initilzed
 
 
