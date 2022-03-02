@@ -1,0 +1,28 @@
+//______________________________________________________
+
+//Block and scopr
+//var , let and const
+
+{
+  var a=10;
+  let b=20;
+  const c=30;
+  console.log(a);
+  console.log(b);
+  console.log(c);
+}
+console.log(a);
+console.log(b); // b is defined in Block space so it will truough error from here only no further exectution
+console.log(c);
+
+//-------------
+// 10
+// 20
+// 30
+// 10
+// d:\vs\script.js:710
+// console.log(b);
+//             ^
+
+// ReferenceError: b is not defined
+//-------------
