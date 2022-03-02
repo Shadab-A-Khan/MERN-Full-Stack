@@ -1,0 +1,37 @@
+
+_______________________________________________________________________________________________________________________________
+
+
+//______________________________________________________
+//#Hositing and let
+
+  var a=10;
+  let b=100;
+  console.log(a);
+  console.log(b);
+
+// ------------------
+// ouput:
+// 10
+// 100
+// ------------------
+
+
+//______________________________________________________
+
+  console.log(a);
+  console.log(b);
+  var a=10;  // var a is hoisted in Gloabal scope and hence result undefined
+  let b=100; // let a is hoisted in script and it is in a temporal dead zone 
+             // and it is not accessiable until value is initilzed
+
+
+// ------------------
+// ouput:
+// undefined
+// ReferenceError: Cannot access 'b' before initialization
+// ------------------
+
+
+_______________________________________________________________________________________________________________________________
+
