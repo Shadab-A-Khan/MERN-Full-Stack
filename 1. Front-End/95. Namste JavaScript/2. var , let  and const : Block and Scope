@@ -33,3 +33,37 @@ output:
 //______________________________________________________________________________________
 
 
+
+
+
+
+
+
+//______________________________________________________
+
+//shadowing
+
+
+var a = 100;
+{
+  var a=10; //this variable will shadow the var a outside he scope
+  
+  console.log(a);
+ 
+}
+console.log(a);
+
+
+//var a=100 , a is stored in the global scope 
+//var a=10    a referes to the same global scope and updates value of a to 10
+
+//---------------
+//ouput:
+//10
+//10
+//---------------
+
+//______________________________________________________
+
+
+
