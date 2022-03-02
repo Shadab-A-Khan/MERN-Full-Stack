@@ -43,6 +43,7 @@ output:
 
 //shadowing
 
+___________________________________
 
 var a = 100;
 {
@@ -52,8 +53,10 @@ var a = 100;
  
 }
 console.log(a);
+___________________________________
 
 
+//**notes
 //var a=100 , a is stored in the global scope 
 //var a=10    a referes to the same global scope and updates value of a to 10
 
@@ -62,6 +65,36 @@ console.log(a);
 //10
 //10
 //---------------
+
+_________________________________________________________
+
+**** in case of let ***
+
+___________________________________
+
+var a = 100;
+{
+  let a=10; 
+  
+  console.log(a);
+ 
+}
+console.log(a);
+___________________________________
+
+
+
+//**notes
+//var a=10    a referes to the block scope , 
+//var a=100 , a is stored in the global scope 
+
+
+//---------------
+//ouput:
+//10
+//100
+//---------------
+
 
 //______________________________________________________
 
