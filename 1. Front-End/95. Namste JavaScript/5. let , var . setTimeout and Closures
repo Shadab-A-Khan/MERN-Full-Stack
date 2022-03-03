@@ -1,0 +1,92 @@
+
+
+//______________________________________________________________________
+// var , let , setTimeout and Closures
+
+function x(){
+  var i=1;
+  for(var i=1; i<=5 ; i++){
+    setTimeout(function(){
+      console.log(i);
+    },i*1000);
+  }
+  
+  console.log("Namaste JavaScript");
+}
+x();
+
+// ----------------
+// your ouput:                      expected ouput:
+// Namaste JavaScript               Namaste JavaScript
+// 6                                1
+// 6                                2
+// 6                                3
+// 6                                4
+// 6                                5
+//----------------
+ 
+                        // |
+                        // |
+                        // | we can use let to fix it
+                        // |
+                        // V
+
+
+                        function x(){
+                          var i=1;
+                          for(let i=1; i<=5 ; i++){
+                            setTimeout(function(){
+                              console.log(i);
+                            },i*1000);
+                          }
+                          
+                          console.log("Namaste JavaScript");
+                        }
+                        x();
+
+                        // ----------------
+                        // your ouput:  
+                        // Namaste JavaScript
+                        // 1
+                        // 2
+                        // 3
+                        // 4
+                        // 5
+                        // ----------------
+
+                        // |
+                        // |
+                        // | we can use a fucntion to get closures to fix it
+                        // | without change var to let
+                        // V
+
+                        function x(){
+                          var i=1;
+                          for(var i=1; i<=5 ; i++){
+                            function close(x){
+                              setTimeout(function(){
+                                console.log(x);
+                              },x*1000);                              
+                            }
+                            close(i);                           
+                          }
+                          
+                          console.log("Namaste JavaScript");
+                        }
+                        x();
+
+                        // ----------------
+                        // your ouput:  
+                        // Namaste JavaScript
+                        // 1
+                        // 2
+                        // 3
+                        // 4
+                        // 5
+                        // ----------------
+                        
+                        
+                        
+//______________________________________________________________________
+
+
