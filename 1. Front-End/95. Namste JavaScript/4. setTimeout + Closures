@@ -1,0 +1,20 @@
+_______________________________________________________________________
+//setTimeout + Closures
+
+
+function x(){
+  var i=1;
+  setTimeout(function(){
+     console.log(i);
+  },3000);
+  console.log("Namaste JavaScript");
+}
+x();
+
+
+------------------
+ouput:
+Namaste JavaScript          //i will take 3 sec to execute meanwhile next line will be executed
+1
+------------------
+_______________________________________________________________________
