@@ -1,0 +1,53 @@
+
+
+//______________________________________________________________________
+
+//Reduce
+
+//find sum of an array
+
+const arr=[3, 1, 5, 7, 4];
+
+function findSum(arr){
+  let sum=0;
+  for(let i=0; i<arr.length ; i++){
+    sum=sum+arr[i];
+  }
+   return sum;
+}
+
+const sum=findSum(arr);
+console.log(sum);
+
+// ---------
+// ouput:
+// 20
+// ---------
+
+
+        // |
+        // |
+        // |
+        // V
+
+// now using reduce
+//.reduce is used while using a reduce function similar to .filter and .map
+//i.e., arr.reduce
+//we pass a fuction into the reduce , the function will have to attributes
+//i.e., accumulator and current --> fucntion (acc , curr){}
+//compairing with the previous array sum example , acc will work as sum
+//and curr will ittreat over the arr and represt the current index value that is similar to arr[i]
+
+const ouput =arr.reduce(function(acc,curr){
+    acc=acc+curr;
+    return acc;
+});
+console.log(ouput);
+
+// ---------
+// ouput:
+// 20
+// ---------
+
+//______________________________________________________________________
+
