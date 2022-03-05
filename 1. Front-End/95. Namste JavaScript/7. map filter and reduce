@@ -7,28 +7,41 @@ map takes us to every index value of the array
 
 _____________________________________________
 
-
 const arr=[2 , 1 ,5 ,7];
-
 
 //double the values the array arr
 
-function double(x){
-     return x*2;
-}
-console.log(arr.map(double));
 
 
+ function double(x){
+      return x*2;
+ }
+ console.log(arr.map(double));
 
-
-        //or            you can also write it like this in javaScript :)
-        
-        
-        
+           //or
 
 console.log(arr.map( function double(x){
-     return x*2;
-}));       
+    return x*2;
+})); 
+
+           //or       //converting it into the arrow function
+
+
+console.log(arr.map((x)=>{
+    return x*2;
+}));   
+
+        //    |
+        //    |since ther is only one line in the functio 
+        //    |that is return x*2 , so we can avoid returning as well
+        //    V
+
+        //    |
+        //    |and there is only one operation in the functio 
+        //    |so we can avoid {curly braces} as well
+        //    V     
+
+console.log(arr.map((x)=> x*2));
         
 
 
