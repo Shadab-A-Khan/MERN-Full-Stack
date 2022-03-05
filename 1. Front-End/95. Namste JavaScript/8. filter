@@ -1,0 +1,39 @@
+
+//______________________________________________________________________
+
+// Filte
+// Filter is used to filter out the values inside the array
+// like you can use a filer the odd values from the array
+// or you can use it to filer the even values from an array
+
+
+//to find odd
+const arr=[5, 1, 3, 2, 6];
+
+function isOdd(x){
+    return x%2;
+}
+const ouput=arr.filter(isOdd);
+console.log(ouput);
+
+// -------------
+// ouput:
+// [ 5, 1, 3 ]
+// -------------
+
+
+//to find the even
+const arr1=[5, 1, 3, 2, 6];
+function isEven(x){
+    return x%2===0;
+}
+
+const ouputEven=arr1.filter(isEven);
+console.log(ouputEven)
+
+// -------------
+// ouput:
+// [ 2, 6 ]
+// -------------
+
+//______________________________________________________________________
