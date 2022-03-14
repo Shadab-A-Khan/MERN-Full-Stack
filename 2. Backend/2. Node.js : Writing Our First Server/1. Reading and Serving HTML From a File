@@ -1,0 +1,70 @@
+
+------------index.html-------------
+
+
+
+<html>
+    <head>
+        <style>
+            body{
+                margin: 0;
+                background-color: midnightblue;
+            }
+            h1{
+                color:white;
+            }
+        </style>
+
+    </head>
+    <body>
+        <h1>I'm Iron Man </h1>
+    </body>
+</html>
+
+
+
+
+
+--------------index.js-----------------
+
+
+
+const http = require('http');
+const port = 8000;
+const fs = require('fs')  //fs is used to read and write from/into files
+
+function requestHandler (req, res){
+    console.log(req.url);
+    res.writeHead(200, {'content-type' : 'text/html'});
+
+    fs.readFile('./index.html' , function(err, data){  //./index.html is the path of the file ./  --> is the way of writing files
+                                                       //data is the file data (i.e., index.htmls data)
+         if(err){
+             console.log('error');
+             
+             return res.end('<h1> Error ! </h1>');
+         }else{
+             return res.end(data);
+         }                                                   
+    });
+   // res.end('<h1> Gotcha! </h1>');
+
+
+
+}
+
+const server=http.createServer(requestHandler);
+
+server.listen(port, function(err){
+   if(err){
+       console.log(err);
+       return;
+   }
+    console.log("server is up and running on port: ", port);
+});
+
+// control c is used to kill the server
+
+//http://localhost:8000/
+
+
