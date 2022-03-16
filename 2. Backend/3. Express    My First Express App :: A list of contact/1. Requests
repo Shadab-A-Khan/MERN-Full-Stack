@@ -1,0 +1,21 @@
+
+_________________________________________________________________________________
+
+Requests
+there are many type of request
+i.e., GET    : get is used when some data has already present we have to take it
+      post   : post is used to upadate the existing data , it can also get the data
+      put    : put is used to update the missing information in the database
+      patch  : patch is used when existing code is not working as expeced so then we can patch the new code
+      delete : when you want to send the id to server to delete that 
+
+
+_________________________________________________________________________________
+
+put
+patch
+delete 
+there Requests work with Ajex only
+
+
+_________________________________________________________________________________
