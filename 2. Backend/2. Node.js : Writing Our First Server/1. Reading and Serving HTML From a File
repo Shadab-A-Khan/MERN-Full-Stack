@@ -63,7 +63,7 @@ server.listen(port, function(err){
     console.log("server is up and running on port: ", port);
 });
 
-// control c is used to kill the server
+// ctrl+c is used to kill the server
 
 //http://localhost:8000/
 
