@@ -69,6 +69,7 @@ function requestHandler (req, res){
     console.log(req.url);
     res.writeHead(200, {'content-type' : 'text/html'});
 
+   let filePath;
    switch(req.url){
        case '/':
            filePath='./index.html'
