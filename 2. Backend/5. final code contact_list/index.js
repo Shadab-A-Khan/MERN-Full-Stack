@@ -1,5 +1,5 @@
 const express = require("express");
-const path = require("path"); // path is inbuit so we dont need to do   npm install path
+const path = require("path"); // path is inbuilt so we dont need to do   npm install path
 const port = 8000; //server runs on a port
 
 const db = require("./cofig/mongoose"); // ./ because these files are on the same level
@@ -7,7 +7,7 @@ const Contact = require("./models/contact");
 
 const app = express(); //now this app has access to all the express libraries, which are need to run a server
 
-app.set("view engine", "ejs"); //we have created a property   --view engine--   and given value   --ejs--
+app.set("view engine", "ejs"); //we have created a property   --view engine--   and given value   --ejs-- , it tells now our 'view engine' is 'ejs'
 app.set("views", path.join(__dirname, "views")); //the make the name of the directory/file dynamic, means they dont need to gie the file name each time
 app.use(express.urlencoded()); //it reads the form data and parsed it into keys and values
 app.use(express.static("assets"));
