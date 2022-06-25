@@ -92,7 +92,8 @@ app.post("/create-contact", function (req, res) {
   // console.log(req.body);
   // console.log(req.body.name);
   // console.log(req.body.phone);
-  // return res.redirect('/practice')          //redirect : it redirect to any perticular url
+  // return res.redirect('/practice')          //redirect : it redirect to any perticular url , like filling id and password to the login page , if it correct redeirect
+                                               //             to home page , else redirect to the same page
 });
 
 //to delete we will use a keyword called   splice
