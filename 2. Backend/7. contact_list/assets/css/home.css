@@ -1,0 +1,36 @@
+body{
+    margin: 0;
+    font-family: sans-serif;
+    padding-left: 35%;
+    padding-right: 35%;
+}
+#page-heading{
+    text-align: center;
+    margin-top: 25px;
+    color: gray;
+}
+
+.contact-style{
+    background-color: blue;
+    color: white;   
+    padding: 1px;
+    padding-right: 20px;
+    margin: 5px;
+
+}
+
+#details{
+    display: inline;
+    
+}
+
+#details1{
+    margin-top: -16px;
+    text-align: right;
+}
+
+.form{
+    margin-left: 45px;
+    padding-right: 15px;
+    
+}
