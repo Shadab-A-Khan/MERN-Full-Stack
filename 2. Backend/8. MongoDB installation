@@ -45,7 +45,15 @@ sudo service mongod start
 
 
 
-sudo service mongod stop MacOS
+sudo service mongod stop 
+
+
+________________________________________________________________________________________________________________________
+
+
+MacOS
+
+
 
 1.	Install Homebrew
 
