@@ -1,0 +1,132 @@
+
+MongoDB Installation
+
+
+Ubuntu
+
+1.	Import the public key used by the package management system.
+
+
+sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 9DA31620334BD75D9DCB49F368818C72E52529D4
+
+
+2. Create a list file for MongoDB.
+
+
+Ubuntu 18.04 -
+
+echo "deb [ arch=amd64 ]
+
+https://repo.mongodb.org/apt/ubuntu bionic/mongodb-
+
+org/4.0 multiverse" | sudo tee
+
+/etc/apt/sources.list.d/mongodb-org-4.0.list
+
+
+Ubuntu 16.04 -
+
+echo "deb [ arch=amd64,arm64 ] https://repo.mongodb.org/apt/ubuntu xenial/mongodb-org/4.0 multiverse" | sudo tee /etc/apt/sources.list.d/mongodb-org-4.0.list
+
+
+3.	Reload local package database. sudo apt-get update
+
+4.	Install the MongoDB packages. sudo apt-get install -y mongodb-org
+ 
+
+5.	Start MongoDB.
+
+
+sudo service mongod start
+
+
+6.	Begin using MongoDB. mongo
+7.	Stop MongoDB.
+
+
+
+sudo service mongod stop MacOS
+
+1.	Install Homebrew
+
+
+/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/maste r/install)"
+
+2.	Tap the MongoDB Homebrew Tap brew tap mongodb/brew
+3.	Install MongoDB
+
+
+brew install mongodb-community@4.0
+
+
+4.	Run MongoDB
+
+
+brew services start mongodb
+ 
+
+5.	Connect and Use MongoDB mongo
+
+
+
+
+
+________________________________________________________________________________________________________________________
+
+
+
+
+
+# Windows
+
+
+
+1.	 Download the MongoDB MSI Installer Package
+
+
+download the current version of MongoDB and package server. https://www.mongodb.com/download-center/community
+
+
+2.	Install MongoDB with the Installation Wizard
+
+
+a.	Click Next to start installation.
+
+b.	Accept the licence agreement then click Next.
+
+c.	Select the Complete setup.
+
+d.	Select “Run service as Network Service user” and make a note of the data directory, we’ll need this later.
+
+e.	Click Install to begin installation.
+
+f.	Hit Finish to complete installation. 
+
+
+3.	Setup Alias Shortcuts for Mongo and Mongod
+
+
+Once installation is complete, we’ll need to set up MongoDB on the local system.
+
+a. Open Start
+ 
+
+b. Type Environment Variables and click on edit environment variables and path
+
+c. Inside System variables, click on path d. In the next window click on new. e. Add a new path
+
+C:\Program Files\MongoDB\Server\{MongoDB Version}\bin
+
+Where MongoDB Version is the mongoDB version
+
+installed on your system
+
+
+For e.g.
+
+C:\Program Files\MongoDB\Server\4.1\bin
+
+
+4.	Verify That Setup was Successful
+
+a. Check by mongo --version or mongod --version
