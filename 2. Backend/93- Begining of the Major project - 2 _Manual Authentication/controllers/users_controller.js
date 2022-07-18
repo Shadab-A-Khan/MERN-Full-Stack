@@ -47,7 +47,7 @@ module.exports.userSignUp=function(req,res){
 
 //get the sign-up data
 module.exports.create=function(req, res){
-    console.log(req.body);
+    //console.log(req.body);
     if(req.body.password != req.body.confirm_password){
         return res.redirect('back');
     }
