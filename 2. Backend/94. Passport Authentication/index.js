@@ -80,7 +80,7 @@ app.use(session({
 
 
 
-app.use(passport.initialize());
+app.use(passport.initialize()); //we tell the app to use passport
 app.use(passport.session());
 
 app.use(passport.setAuthenticatedUser)
