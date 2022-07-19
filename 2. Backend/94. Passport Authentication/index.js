@@ -72,6 +72,7 @@ app.use(session({
     cookie: {
         maxAge: (1000 * 60 * 100)
     },
+    // using mongo store to store the session into the monogodb so that , we dont get logged out each time server restart
     store:MongoStore.create({
         mongoUrl:db._connectionString,
         autoRemove: 'disabled'
