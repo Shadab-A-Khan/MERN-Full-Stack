@@ -10,7 +10,7 @@ passport.use( new LocalStrategy(
         usernameField: 'email'
     },
 
-    function(email, password, done){  //here email and password to sign in
+    function(email, password, done){  //here email and password to sign in  -- done is a callback function which is reporting back to Passport.js
         //find a user and establish the identity
         User.findOne({email: email},function(err,user){ //first email is the email from the schema/model and second email is the user filled email
             if(err){
